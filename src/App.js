@@ -18,6 +18,7 @@ function App() {
       in1: "",
       in2: "",
       in3: "",
+      in4:"",
       id1: "",
       id2: "",
       idDate1: "",
@@ -457,9 +458,9 @@ function App() {
                 type="text"
                 border={false}
                 placeholder="...................."
-                name="in3"
+                name="in4"
                 style={{ height: '25px', border: 'none' }}
-                value={formik.values.in3}
+                value={formik.values.in4}
                 onChange={formik.handleChange} />
             </div>
           </div>
