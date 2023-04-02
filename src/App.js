@@ -273,7 +273,7 @@ function App() {
         t={<>
           <p className='text-center fw-bolder'>تصريح بعدم العمل</p>
           <p className='fw-bolder'>بناءا على شهادة الشهود الممصن اسفله</p>
-          <div>
+          <div className='py-2'>
             <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
               <span>01- السيد(ة) : </span>
               <Form.Control
@@ -284,17 +284,18 @@ function App() {
                 style={{ height: '25px', border: 'none' }}
                 value={formik.values.name1}
                 onChange={formik.handleChange} />
-            </div>
-            <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
               <span>المولود بتاريخ</span>
               <Form.Control
                 type="date"
                 noCalendarIcon={true}
                 placeholder="...................."
                 name="date1"
-                style={{ height: '25px', width: '120px', border: 'none' }}
+                style={{ height: '25px', width: '250px', border: 'none' }}
                 value={formik.values.date1}
                 onChange={formik.handleChange} />
+            </div>
+            <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
+
               <span>ب</span>
               <Form.Control
                 type="text"
@@ -305,8 +306,6 @@ function App() {
                 value={formik.values.in1}
                 onChange={formik.handleChange} />
               <span>صاحب ب.ت.و وتحت رقم</span>
-            </div>
-            <div className='d-flex'>
               <Form.Control
                 type="text"
                 border={false}
@@ -315,6 +314,9 @@ function App() {
                 style={{ height: '25px', width: '150px', border: 'none' }}
                 value={formik.values.id1}
                 onChange={formik.handleChange} />
+            </div>
+            <div className='d-flex'>
+
               <span>الصادرة بتاريخ: </span>
               <Form.Control
                 type="date"
@@ -324,8 +326,6 @@ function App() {
                 value={formik.values.idDate1}
                 onChange={formik.handleChange} />
               <span>من طرف دائرة/بلدية</span>
-            </div>
-            <div>
               <Form.Control
                 type="text"
                 border={false}
@@ -336,8 +336,7 @@ function App() {
                 onChange={formik.handleChange} />
             </div>
           </div>
-          <hr className='mx-2' />
-          <div>
+          <div className='py-2'>
             <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
               <span>02- السيد(ة) : </span>
               <Form.Control
@@ -348,17 +347,18 @@ function App() {
                 style={{ height: '25px', border: 'none' }}
                 value={formik.values.name2}
                 onChange={formik.handleChange} />
-            </div>
-            <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
               <span>المولود بتاريخ</span>
               <Form.Control
                 type="date"
                 noCalendarIcon={true}
                 placeholder="...................."
                 name="date2"
-                style={{ height: '25px', width: '120px', border: 'none' }}
+                style={{ height: '25px', width: '250px', border: 'none' }}
                 value={formik.values.date2}
                 onChange={formik.handleChange} />
+            </div>
+            <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
+
               <span>ب</span>
               <Form.Control
                 type="text"
@@ -369,8 +369,6 @@ function App() {
                 value={formik.values.in2}
                 onChange={formik.handleChange} />
               <span>صاحب ب.ت.و وتحت رقم</span>
-            </div>
-            <div className='d-flex'>
               <Form.Control
                 type="text"
                 border={false}
@@ -379,6 +377,9 @@ function App() {
                 style={{ height: '25px', width: '150px', border: 'none' }}
                 value={formik.values.id2}
                 onChange={formik.handleChange} />
+            </div>
+            <div className='d-flex'>
+
               <span>الصادرة بتاريخ: </span>
               <Form.Control
                 type="date"
@@ -388,8 +389,6 @@ function App() {
                 value={formik.values.idDate2}
                 onChange={formik.handleChange} />
               <span>من طرف دائرة/بلدية</span>
-            </div>
-            <div>
               <Form.Control
                 type="text"
                 border={false}
@@ -400,8 +399,7 @@ function App() {
                 onChange={formik.handleChange} />
             </div>
           </div>
-          <hr className='mx-2' />
-          <div>
+          <div className='py-2'>
             <div className='d-flex' style={{ whiteSpace: 'nowrap' }}>
               <p>نشهد على ان السيد(ة): </p>
               <Form.Control
@@ -459,14 +457,13 @@ function App() {
                 type="text"
                 border={false}
                 placeholder="...................."
-                name="in4"
+                name="in3"
                 style={{ height: '25px', border: 'none' }}
-                value={formik.values.in4}
+                value={formik.values.in3}
                 onChange={formik.handleChange} />
             </div>
           </div>
-          <hr className='mx-2' />
-          <div>
+          <div className='py-2'>
             <p className='p-0 m-0 fw-bolder'>لا يمارس اي وظيفة او دو مرتب شهري</p>
             <p className='p-0 m-0 fw-bolder'>امضنا على هدا التصريح لاستعماله في حدود ما يسمح به القانون.</p>
             <p className='my-5'>امضاء الشاهد الاول</p>
